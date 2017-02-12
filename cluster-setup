@@ -1,0 +1,6 @@
+Configuration Details
+Release label:emr-5.0.3
+Hadoop distribution:Amazon 2.7.3
+Applications:Hive 2.1.0, Pig 0.16.0, Hue 3.10.0, Spark 2.0.1, Ganglia 3.7.2
+Log URI:s3://planck-ec2/
+EMRFS consistent view:Disabled

@@ -1,0 +1,20 @@
+
+- Need to install git, sbt and the repository
+
+   29  sudo yum install git
+   36  git clone https://github.com/databricks/reference-apps.git
+  
+- To install sbt:
+ 
+   48  sudo yum install -y https://dl.bintray.com/sbt/rpm/sbt-0.13.7.rpm 
+
+   80  cd /home/hadoop/reference-apps/twitter_classifier/scala
+   81  sbt assembly
+
+- It was complaining so I had to do this:
+
+   82  rm /home/hadoop/reference-apps/twitter_classifier/scala
+   83  rm /home/hadoop/.ivy2/.sbt.ivy.lock
+   84  sbt assembly
+   85  rm /home/hadoop/.sbt/boot/sbt.boot.lock
+   86  sbt assembly

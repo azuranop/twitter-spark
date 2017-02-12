@@ -1,0 +1,4 @@
+
+export SPARK_HOME=/usr/lib/spark/
+
+${SPARK_HOME}bin/spark-submit --class "com.databricks.apps.twitterClassifier.Collect" --master local[4] /home/hadoop/reference-apps/twitter_classifier/scala/target/scala-2.11/spark-twitter-lang-classifier-assembly-2.0.0.jar /tmp/tweets 50000 10 1 --consumerKey=qWVEIGCuVScXXoABT4XQ5TDCw --consumerSecret=2m6LgFZsLMODCXGpldmaDoLSfXbLQmryKMNy2WUYmKEGvnLaL6 --accessToken=3370516469-iVjnlfxV2YxNuOHFd6C7gR6B9nQpHymCfL4ojP8 --accessTokenSecret=4XpmHfq4AshwINvw1vH8dTRbliOLB37EfHhGsYhimZCh7
